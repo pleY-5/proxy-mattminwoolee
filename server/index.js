@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
+const proxy = require('express-http-proxy');
 
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
-const router = require('./routes.js');
+// const router = require('./routes.js');
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
