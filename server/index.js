@@ -1,4 +1,5 @@
 const express = require('express');
+require('newrelic');
 const app = express();
 const proxy = require('express-http-proxy');
 var path = require('path');
