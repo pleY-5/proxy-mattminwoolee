@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const proxy = require('express-http-proxy');
-
+var path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 // const compression = require('compression');
@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 
 /********* Loader.io *********/
 app.get('/loaderio-1ee1f35b8d9ff2a3ed249fcbb2f0d31a', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../loaderio-1ee1f35b8d9ff2a3ed249fcbb2f0d31a.txt'));
+  res.sendFile(path.resolve(__dirname, '../public/loaderio-1ee1f35b8d9ff2a3ed249fcbb2f0d31a.txt'));
 });
 
 app.use(morgan('dev'));

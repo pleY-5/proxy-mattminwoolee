@@ -23,6 +23,7 @@
     "express-http-proxy": "^1.4.0",
     "morgan": "^1.9.1",
     "newrelic": "^4.9.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7"
   }
 }
